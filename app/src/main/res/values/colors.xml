@@ -11,4 +11,7 @@
     <color name="Neon">#04d9ff</color>
     <color name="Pale">#dcdcdc</color>
     <color name="OrangeRed">#FF4500</color>
+    <color name="Gold">#FFD700</color>
+    <color name="LightCyan">#E0FFFF</color>
+    <color name="Snow">#FFFAFA</color>
 </resources>

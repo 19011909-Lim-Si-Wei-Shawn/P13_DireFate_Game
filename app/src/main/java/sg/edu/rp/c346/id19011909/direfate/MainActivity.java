@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                long dataInsert = dbh.insertPlayerInfo("0.0", 100, 0);
+                long dataInsert = dbh.insertPlayerInfo("1", 100, 0);
 
                 Intent intent = new Intent(MainActivity.this, StoryLineActivity.class);
                 startActivity(intent);
@@ -73,4 +75,33 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    //Displaying Dropdown List,
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    //Translating Language,
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here.
+        int id = item.getItemId();
+
+        //Enabling DBHelper,
+        DBHelper dbh = new DBHelper(MainActivity.this);
+
+        if (id == R.id.Reset)
+        {
+            dbh.deleteDatabase();
+            finish();
+            startActivity(getIntent());
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

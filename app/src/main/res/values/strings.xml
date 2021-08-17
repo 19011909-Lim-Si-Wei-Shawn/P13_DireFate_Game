@@ -15,4 +15,6 @@
     <string name="GameOver">Game Over \nYou Have Died!</string>
     <string name="Credits">Thanks for Playing, do rate the application and future updates would be occurring!\n</string>
     <string name="Restart">Back to HomePage</string>
+    <string name="ResetData">Reset Player Data</string>
+    <string name="SaveData">Save Player Data</string>
 </resources>

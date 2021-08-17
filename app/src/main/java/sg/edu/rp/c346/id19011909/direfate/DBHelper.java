@@ -90,7 +90,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 int PlayerHealth = cursor.getInt(2);
                 int PlayerGold = cursor.getInt(3);
 
-                Player Data = new Player(id, PlayerProgress, PlayerHealth, PlayerGold);
+                Player Data = new Player(PlayerProgress, PlayerHealth, PlayerGold);
                 Details.add(Data);
             } while(cursor.moveToNext());
         }
@@ -104,6 +104,13 @@ public class DBHelper extends SQLiteOpenHelper {
     //Updating PlayerData Method,
     public int updatePlayerInfo(Player data)
     {
+
+        String selectedQuery = "SELECT " + COLUMN_ID + ", "
+                + COLUMN_1 + ", "
+                + COLUMN_2 + ", "
+                + COLUMN_3
+                + " FROM " + TABLE_HEADER;
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues Data = new ContentValues();
 
@@ -111,10 +118,7 @@ public class DBHelper extends SQLiteOpenHelper {
         Data.put(COLUMN_2, data.getPlayerHealth());
         Data.put(COLUMN_3, data.getPlayerGold());
 
-        String condition = COLUMN_ID + "= ?";
-        String[] args = {String.valueOf(data.getPID())};
-
-        int results = db.update(TABLE_HEADER, Data, condition, args);
+        int results = db.update(selectedQuery, Data, null, null);
         db.close();
         return results;
 

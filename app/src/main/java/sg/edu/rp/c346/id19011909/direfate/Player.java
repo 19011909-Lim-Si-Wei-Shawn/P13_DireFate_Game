@@ -11,9 +11,9 @@ public class Player implements Serializable {
     private int PlayerGold;
 
     //Constructor,
-    public Player(int PID, String PlayerProgress, int PlayerHealth, int PlayerGold)
+    public Player(String PlayerProgress, int PlayerHealth, int PlayerGold)
     {
-        this.PID = PID;
+        //this.PID = PID;
         this.PlayerProgress = PlayerProgress;
         this.PlayerHealth = PlayerHealth;
         this.PlayerGold = PlayerGold;
