@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/displayactivity_day">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TVHealthHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Health"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TVHealthDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TVGoldHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Gold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/TVGoldDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/TVPlayerProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/DisplayOutcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/btnEncounter"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/Forward"
+            android:textColor="@color/white"
+            app:buttonColor="@color/black"
+            app:cornerRadius="50dp"
+            app:glowColor="@color/Neon"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/btnQuit"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/Exit"
+            android:textColor="@color/white"
+            app:buttonColor="@color/black"
+            app:cornerRadius="50dp"
+            app:glowColor="@color/Neon"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gameover">
+
+
+    <TextView
+        android:id="@+id/GameOverTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/GameOver"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/Credits"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/btnGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/Restart"
+        android:textColor="@color/white"
+        app:buttonColor="@color/black"
+        app:cornerRadius="50dp"
+        app:glowColor="@color/Neon"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp" />
+
+
+</LinearLayout>

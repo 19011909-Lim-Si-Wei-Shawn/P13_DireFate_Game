@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dire Fate</string>
+
+    <string name="StartActivity">Start Game</string>
+    <string name="ContinueActivity">Continue Game</string>
+    <string name="StoryLine1">As war plague the lands, humankind has barely latched on against the war with demonkind with each day, the domain of the human race diminishes slowly.</string>
+    <string name="StoryLine2">As the gods peer intently at the massacre that occurs, unknowing to them, a boy whose dream was to become a god slayer and becoming a god himself, unlike the others.</string>
+    <string name="StoryLine3">To provide himself worthy, he would take his first step in achieving his desired future, though trials and tribulation that awaits him.</string>
+
+    <string name="EncounterNo">You continue on your journey.</string>
+    <string name="Health">Player Health:</string>
+    <string name="Gold">Player Gold:</string>
+    <string name="Forward">Move 1 Step</string>
+    <string name="Exit">Quit Game</string>
+    <string name="GameOver">Game Over \nYou Have Died!</string>
+    <string name="Credits">Thanks for Playing, do rate the application and future updates would be occurring!\n</string>
+    <string name="Restart">Back to HomePage</string>
+</resources>
